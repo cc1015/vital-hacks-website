@@ -1,8 +1,8 @@
 <template>
   <div class="flex gap-4 mb-4">
-    <div class="w-1/2"><h1 class="text-8xl">All About ViTAL Hacks</h1></div>
+    <div class="w-1/2"><h1 class="text-6xl md:text-8xl">All About ViTAL Hacks</h1></div>
     <div class="w-1/2">
-      <h2>
+      <h2 class="text-lg md:text-3xl">
         ViTAL Hacks 2025 is a beginner friendly healthcare hackathon hosted by
         <a
           href="https://vitalnortheastern.org/"
@@ -20,7 +20,7 @@
       </h2>
       <br></br>
       <br></br>
-      <h2>
+      <h2 class="text-lg md:text-3xl">
         In addition to the 8-hour event, ViTAL Hacks will host two web
         development workshops and an Ideation Day to jumpstart technical skills
         and brainstorming.

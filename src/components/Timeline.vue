@@ -1,11 +1,11 @@
 <template>
   <div class="timeline-container">
-    <div class="timeline mb-48">
+    <div class="timeline mb-36 mt-16">
       <div v-for="(item, index) in timelineItems" 
            :key="index" 
            class="timeline-item"
            :class="{ 'timeline-item-top': index % 2 === 0, 'timeline-item-bottom': index % 2 === 1 }">
-        <div class="timeline-content">
+        <div class="timeline-content ">
           <h4>{{ item.title }}</h4>
           <p class="description">{{ item.description }}</p>
           <p class="location">{{ item.location }}</p>
@@ -34,7 +34,7 @@ export default {
         {
           title: '3/22',
           description: 'Hackathon Registration Deadline',
-          location: 'EV024, 6-7PM'
+          location: ''
         },
         {
           title: '3/27',
@@ -117,7 +117,9 @@ export default {
 .timeline-content {
   position: absolute;
   max-width: 180px;
+  word-wrap: break-word;
 }
+
 
 .timeline-item-top .timeline-content {
   top: calc(50% + 50px);
@@ -170,7 +172,7 @@ export default {
   }
   
   .timeline-content {
-    max-width: 150px;
+    max-width: 120px;
   }
 }
 
@@ -196,7 +198,7 @@ export default {
   }
 
   .timeline-item::before {
-    left: -20px;
+    left: -50px;
     width: 20px;
     height: 1px;
     top: 50%;
@@ -216,6 +218,7 @@ export default {
     top: 0;
     bottom: 0;
     left: 20px;
+    max-width: 150px;
   }
 
   .timeline-item-top .timeline-content,
@@ -235,7 +238,7 @@ export default {
   }
 
   .timeline-content {
-    max-width: calc(100% - 40px);
+    max-width: 150px;
   }
 }
 </style>

@@ -53,10 +53,7 @@
 html body {
   min-height: 100vh;
   color: var(--color-text);
-  background-image: url(/background_pre.svg);
-  background-size: cover;
-  background-attachment: scroll;
-  background-repeat: no-repeat;
+  background-color: var(--vt-c-navy);
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
