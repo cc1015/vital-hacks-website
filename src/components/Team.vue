@@ -5,7 +5,7 @@ import TeamMember from "./TeamMember.vue";
 <template>
   <div class="text-center">
     <h3 class="mb-6">Team</h3>
-    <h6 class="text-lg font-semibold mb-6">Co-Executive Directors</h6>
+    <h6 class="text-lg font-semibold mb-6">ViTAL Co-Executive Directors</h6>
     <div class="flex justify-center gap-8 mb-2">
       <div class="flex flex-col items-center">
         <TeamMember
@@ -53,24 +53,24 @@ import TeamMember from "./TeamMember.vue";
         <div class="flex justify-center gap-8">
           <div class="flex flex-col items-center">
             <TeamMember
-              src="/jaena.jpg"
-              alt="JaeNa"
-              caption="JaeNa Wray"
-              contact="https://www.linkedin.com/in/jaenawray/"
-            />
-          </div>
-          <div class="flex flex-col items-center">
-            <TeamMember
               src="/aria.jpg"
               alt="Aria"
               caption="Aria Agarwal"
               contact="https://www.linkedin.com/in/aria-agarwal-4a11b629a/"
             />
           </div>
+          <div class="flex flex-col items-center">
+            <TeamMember
+              src="/jaena.jpg"
+              alt="JaeNa"
+              caption="Jae Na Wray"
+              contact="https://www.linkedin.com/in/jaenawray/"
+            />
+          </div>
         </div>
       </div>
     </div>
-    <h6 class="text-lg font-semibold">Software Engineers</h6>
+    <h6 class="text-lg font-semibold">Software Experts</h6>
     <div class="flex justify-center gap-8 mb-2">
       <div class="flex flex-col items-center">
         <TeamMember

@@ -3,39 +3,33 @@ import TabBar from "./components/TabBar.vue";
 import Countdown from "./components/Countdown.vue";
 import About from "./components/About.vue";
 import Register from "./components/Register.vue";
+import Timeline from "./components/Timeline.vue";
+import Details from "./components/Details.vue";
 import FAQ from "./components/FAQ.vue";
 import Team from "./components/Team.vue";
 </script>
 
 <template>
   <header>
-    <div class="fixed top-0 left-0 w-full">
-      <TabBar></TabBar>
-    </div>
+    <TabBar class="fixed top-0 left-0 w-full z-10"></TabBar>
   </header>
 
   <main class="pt-48">
-    <div class="flex flex-col space-y-32">
-      <section id="hero" class="flex justify-between items-center">
-        <h1 class="text-white font-extrabold text-9xl">
-          <span class="block">ViTAL</span>
-          <span class="block">Hacks</span>
-          <span class="block">2025</span>
-        </h1>
-        <div>
-          <Countdown />
-        </div>
+    <div class="flex flex-col space-y-16">
+      <section class="mt-96">
+        <Countdown />
       </section>
-      <section id="about">
+      <section id="about" class="scroll-mt-32">
         <About />
       </section>
-      <section id="register">
+      <section id="register" class="scroll-mt-32">
         <Register />
+        <Timeline />
       </section>
-      <section id="faq">
+      <section id="faq" class="scroll-mt-32">
         <FAQ />
       </section>
-      <section id="team">
+      <section id="team" class="scroll-mt-32">
         <Team />
       </section>
     </div>
