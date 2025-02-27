@@ -110,14 +110,3 @@ const triggerFlip = (unit: string) => {
     </vue-countdown>
   </div>
 </template>
-
-<style scoped>
-@font-face {
-  font-family: "CustomFont";
-  src: url("/digital_fonts/digital-7.ttf") format("truetype");
-}
-
-.custom-text {
-  font-family: "CustomFont", sans-serif;
-}
-</style>
