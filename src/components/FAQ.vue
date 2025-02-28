@@ -64,7 +64,7 @@ const toggleFAQ = (index: number) => {
     <div v-for="(faq, index) in faqs" :key="index" class="border-b py-4">
       <button
         @click="toggleFAQ(index)"
-        class="w-full flex justify-between items-center text-lg font-semibold"
+        class="w-full flex justify-between items-center text-left text-lg font-semibold"
       >
         {{ faq.question }}
         <span>{{ faq.isOpen ? "−" : "+" }}</span>

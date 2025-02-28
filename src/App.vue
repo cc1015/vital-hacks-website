@@ -65,13 +65,13 @@ const toggleMenu = () => {
           <img
             src="/angled_down_node_icon.svg"
             alt="Node Icon"
-            class="w-50 absolute -top-12 -left-8 md:block hidden"
+            class="w-50 absolute -top-12 -left-8"
           />
           <About class="relative z-5" />
           <img
             src="/angled_up_node_icon.svg"
             alt="Node Icon"
-            class="absolute -right-8 -bottom-12 md:block hidden"
+            class="absolute -right-8 -bottom-12"
           />
         </div>
       </section>
