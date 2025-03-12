@@ -1,6 +1,6 @@
 <template>
   <div class="timeline-container">
-    <div class="timeline mb-36 mt-16">
+    <div class="timeline mb-36">
       <div v-for="(item, index) in timelineItems" 
            :key="index" 
            class="timeline-item"
@@ -54,7 +54,7 @@ export default {
 
 <style scoped>
 .timeline-container {
-  padding: 120px 20px 20px 20px;
+  padding: 0;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;

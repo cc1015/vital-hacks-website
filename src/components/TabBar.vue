@@ -8,6 +8,9 @@ import TabItem from "./TabItem.vue";
         <img src="/white_logo.svg" alt="Logo" class="h-13"></img>
       </a>
     <div class="flex justify-end space-x-2">
+    <TabItem id="timeline">Schedule</TabItem>
+      <TabItem id="prompt">Prompt</TabItem>
+      <TabItem id="submit">Submit</TabItem>
       <TabItem id="about">About</TabItem>
       <TabItem id="register">Register</TabItem>
       <TabItem id="faq">FAQ</TabItem>

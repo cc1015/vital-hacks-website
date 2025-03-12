@@ -51,20 +51,6 @@ const triggerFlip = (unit: string) => {
       @update="updateCountdown"
     >
       <div class="flex gap-2 md:gap-6">
-        <!-- Days -->
-        <div class="text-center days">
-          <div class="w-20 h-20 md:w-40 md:h-40 perspective-1000">
-            <div class="relative w-full h-full text-center">
-              <div
-                class="absolute w-full h-full flex justify-center items-center text-5xl md:text-8xl text-white border-4 rounded-2xl border-indigo-500 custom-text"
-              >
-                {{ days }}
-              </div>
-            </div>
-          </div>
-          <span class="block mt-2 md:text-2xl text-white">days</span>
-        </div>
-
         <!-- Hours -->
         <div class="text-center hours">
           <div class="w-20 h-20 md:w-40 md:h-40 perspective-1000">
