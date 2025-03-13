@@ -1,18 +1,19 @@
 <script setup lang="ts">
-import TabBar from "./components/TabBar.vue";
-import Countdown from "./components/Countdown.vue";
-import About from "./components/About.vue";
-import Register from "./components/Register.vue";
-import Timeline from "./components/Timeline.vue";
-import Details from "./components/Details.vue";
-import FAQ from "./components/FAQ.vue";
-import Team from "./components/Team.vue";
-import { ref } from 'vue';
+import { ref, defineAsyncComponent } from 'vue';
 
 const isMenuOpen = ref(false);
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
 };
+
+// Lazy load components
+const TabBar = defineAsyncComponent(() => import('./components/TabBar.vue'));
+const Countdown = defineAsyncComponent(() => import('./components/Countdown.vue'));
+const About = defineAsyncComponent(() => import('./components/About.vue'));
+const Register = defineAsyncComponent(() => import('./components/Register.vue'));
+const Timeline = defineAsyncComponent(() => import('./components/Timeline.vue'));
+const FAQ = defineAsyncComponent(() => import('./components/FAQ.vue'));
+const Team = defineAsyncComponent(() => import('./components/Team.vue'));
 </script>
 
 <template>
