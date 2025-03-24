@@ -3,8 +3,9 @@ import { ref, onMounted } from "vue";
 import VueCountdown from "@chenfengyuan/vue-countdown";
 
 const now = new Date();
-const newYear = new Date(now.getFullYear(), 2, 29, 9, 0, 0);
-const time = ref(newYear.getTime() - now.getTime());
+const target = new Date(Date.UTC(now.getFullYear(), 2, 29, 21, 30, 0)); // March 29, 5:30 PM ET -> 9:30 PM UTC
+let timeRemaining = target.getTime() - now.getTime();
+const time = ref(timeRemaining > 0 ? timeRemaining : 0);
 
 const prevDays = ref(0);
 const prevHours = ref(0);
