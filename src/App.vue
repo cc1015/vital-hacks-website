@@ -10,7 +10,9 @@ import Team from "./components/Team.vue";
 import RegistrationClosed from "./components/RegistrationClosed.vue";
 import Submit from "./components/Submit.vue";
 import EventTimeline from "./components/EventTimeline.vue";
+import DownloadTimeline from "./components/DownloadTimeline.vue";
 import Prompt from "./components/Prompt.vue";
+import Keynote from "./components/Keynote.vue";
 import { ref } from "vue";
 
 const isMenuOpen = ref(false);
@@ -22,13 +24,13 @@ const toggleMenu = () => {
 <template>
   <header>
     <!-- Desktop Navigation -->
-    <nav class="hidden md:block">
+    <nav class="hidden lg:block">
       <TabBar class="fixed top-0 left-0 w-full z-10"></TabBar>
     </nav>
 
     <!-- Mobile Navigation -->
     <nav
-      class="md:hidden fixed top-0 left-0 w-full z-10 bg-[#001049] border-b border-gray-200"
+      class="lg:hidden fixed top-0 left-0 w-full z-10 bg-[#001049] border-b border-gray-200"
     >
       <div class="flex justify-between items-center px-4 py-3">
         <img src="/white_logo.svg" alt="Logo" class="h-8" />
@@ -60,9 +62,21 @@ const toggleMenu = () => {
       <!-- Mobile Menu -->
       <div
         v-show="isMenuOpen"
-        class="bg-[#001049] border-t border-gray-800"
+        class="bg-[#001049] border-t border-gray-800 fixed inset-0 overflow-y-auto mt-12"
         @click="toggleMenu"
       >
+        <a href="#timeline" class="block px-4 py-2 text-white hover:bg-gray-800"
+          >Schedule</a
+        >
+        <a href="#speaker" class="block px-4 py-2 text-white hover:bg-gray-800"
+          >Keynote Speaker</a
+        >
+        <a href="#prompt" class="block px-4 py-2 text-white hover:bg-gray-800"
+          >Prompt</a
+        >
+        <a href="#submit" class="block px-4 py-2 text-white hover:bg-gray-800"
+          >Submit</a
+        >
         <a href="#about" class="block px-4 py-2 text-white hover:bg-gray-800"
           >About</a
         >
@@ -81,15 +95,25 @@ const toggleMenu = () => {
 
   <main class="pt-24">
     <div class="flex flex-col space-y-16">
-      <section class="flex items-center justify-center gap-x-24">
-        <img src="/main_logo.svg" alt="Main Logo" class="w-1/2 max-w-xl" />
-        <div class="flex flex-col items-center">
-          <h2 class="text-xl3 font-bold">Hacking Ends In...</h2>
-          <Countdown class="scale-85"></Countdown>
-        </div>
+      <section class="flex flex-col items-center justify-center space-y-8">
+        <img src="/main_logo.svg" alt="Main Logo" class="w-2/3 max-w-xl" />
+        <h3>Hacking Ends In...</h3>
+        <Countdown />
       </section>
-      <section id="timeline" class="scroll-mt-32 pb-20">
+      <section
+        id="timeline"
+        class="scroll-mt-16 md:scroll-mt-32 pb-20 hidden md:block"
+      >
         <EventTimeline />
+      </section>
+      <section
+        id="timelineDownload"
+        class="scroll-mt-16 md:scroll-mt-32 pb-20 md:hidden"
+      >
+        <DownloadTimeline />
+      </section>
+      <section id="speaker" class="scroll-mt-32">
+        <Keynote />
       </section>
       <section id="prompt" class="scroll-mt-32">
         <Prompt />

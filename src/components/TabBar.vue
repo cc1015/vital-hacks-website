@@ -9,7 +9,8 @@ import TabItem from "./TabItem.vue";
       </a>
     <div class="flex justify-end space-x-2">
     <TabItem id="timeline">Schedule</TabItem>
-      <TabItem id="prompt">Prompt</TabItem>
+    <TabItem id="speaker">Keynote Speaker</TabItem>
+    <TabItem id="prompt">Prompt</TabItem>
       <TabItem id="submit">Submit</TabItem>
       <TabItem id="about">About</TabItem>
       <TabItem id="register">Register</TabItem>

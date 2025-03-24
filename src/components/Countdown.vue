@@ -43,7 +43,7 @@ const triggerFlip = (unit: string) => {
 </script>
 
 <template>
-  <div class="flex flex-col items-center justify-center my-8 z-0">
+  <div class="flex flex-col items-center justify-center z-0">
     <vue-countdown
       :time="time"
       :interval="1000"

@@ -64,7 +64,7 @@
               <div
                 v-for="activity in stage.activities"
                 :key="activity.name"
-                class="activity"
+                class="activity text-xs md:text-base"
                 :style="getActivityStyle(activity)"
               >
                 {{ activity.name }}
@@ -116,7 +116,7 @@ export default {
               endHour: 17.5,
             },
             {
-              name: "Closing Ceremony",
+              name: "Keynote Speaker + Closing",
               startHour: 17.55,
               endHour: 19,
             },
@@ -363,7 +363,6 @@ export default {
   color: white;
   z-index: 1;
   box-sizing: border-box;
-  font-size: 1rem;
 }
 
 .event-labels {
