@@ -1,6 +1,11 @@
 <template>
   <div class="hackathon-prompt">
-    <h1 class="challenge-header">THE CHALLENGE</h1>
+    <div class="flex content-center text-center justify-center">
+      <h1 class="challenge-header">THE CHALLENGE</h1>
+      <a href="/prompt.pdf" target="_blank">
+        <img src="/download_icon.svg" alt="Info" class="w-8 h-8 cursor-pointer" />
+      </a>
+    </div>
     <h1 class="text-center text-[#615fff]">PREVENTATIVE CARE</h1>
 
     <div class="prompt-box">

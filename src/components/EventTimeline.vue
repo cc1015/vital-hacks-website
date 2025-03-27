@@ -1,8 +1,5 @@
 <template>
   <div class="px-16">
-    <div class="text-center pb-8">
-      <h3>Event Schedule</h3>
-    </div>
     <div class="timeline-wrapper">
       <!-- Header Timeline -->
       <div class="timeline-header">
@@ -339,7 +336,7 @@ export default {
 
 .stage {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   align-items: center;
 }
 
