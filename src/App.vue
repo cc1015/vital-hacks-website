@@ -14,6 +14,7 @@ const Register = defineAsyncComponent(() => import('./components/Register.vue'))
 const Timeline = defineAsyncComponent(() => import('./components/Timeline.vue'));
 const FAQ = defineAsyncComponent(() => import('./components/FAQ.vue'));
 const Team = defineAsyncComponent(() => import('./components/Team.vue'));
+const RegistrationClosed = defineAsyncComponent(() => import('./components/RegistrationClosed.vue'));
 </script>
 
 <template>
@@ -77,7 +78,7 @@ const Team = defineAsyncComponent(() => import('./components/Team.vue'));
         </div>
       </section>
       <section id="register" class="scroll-mt-32">
-        <Register />
+        <RegistrationClosed />
         <Timeline />
       </section>
       <section id="faq" class="scroll-mt-32">
