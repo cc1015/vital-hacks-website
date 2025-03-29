@@ -2,8 +2,14 @@
 import { ref, defineAsyncComponent } from "vue";
 
 const isMenuOpen = ref(false);
+const isNavVisible = ref(true); // New ref for nav visibility
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
+};
+
+// Toggle nav visibility function
+const toggleNavVisibility = () => {
+  isNavVisible.value = !isNavVisible.value;
 };
 
 // Lazy load components
@@ -36,14 +42,24 @@ const Keynote = defineAsyncComponent(() => import("./components/Keynote.vue"));
 </script>
 
 <template>
+  <!-- Nav Toggle Button -->
+  <button
+    @click="toggleNavVisibility"
+    class="fixed right-4 z-50 bg-white/20 text-white px-3 py-1 rounded-lg backdrop-blur-sm hover:bg-white/30 transition"
+    :class="isNavVisible ? 'top-24' : 'top-4'"
+  >
+    {{ isNavVisible ? "Hide ^" : "Show" }}
+  </button>
+
   <header>
     <!-- Desktop Navigation -->
-    <nav class="hidden lg:block">
+    <nav class="hidden lg:block" v-show="isNavVisible">
       <TabBar class="fixed top-0 left-0 w-full z-10"></TabBar>
     </nav>
 
     <!-- Mobile Navigation -->
     <nav
+      v-show="isNavVisible"
       class="lg:hidden fixed top-0 left-0 w-full z-10 bg-[#001049] border-b border-gray-200"
     >
       <div class="flex justify-between items-center px-4 py-3">
@@ -75,7 +91,7 @@ const Keynote = defineAsyncComponent(() => import("./components/Keynote.vue"));
 
       <!-- Mobile Menu -->
       <div
-        v-show="isMenuOpen"
+        v-show="isMenuOpen && isNavVisible"
         class="bg-[#001049] border-t border-gray-800 fixed inset-0 overflow-y-auto mt-12"
         @click="toggleMenu"
       >
@@ -107,7 +123,9 @@ const Keynote = defineAsyncComponent(() => import("./components/Keynote.vue"));
     </nav>
   </header>
 
-  <main class="pt-24">
+  <main
+    :class="['transition-all duration-300', isNavVisible ? 'pt-24' : 'pt-4']"
+  >
     <div class="flex flex-col space-y-16">
       <section class="flex flex-col items-center justify-center space-y-8">
         <img src="/main_logo.svg" alt="Main Logo" class="w-2/3 max-w-xl" />
@@ -184,5 +202,10 @@ const Keynote = defineAsyncComponent(() => import("./components/Keynote.vue"));
 .mobile-menu-enter-from,
 .mobile-menu-leave-to {
   opacity: 0;
+}
+
+/* Smooth transition for main content */
+main {
+  transition: padding-top 0.3s ease;
 }
 </style>
