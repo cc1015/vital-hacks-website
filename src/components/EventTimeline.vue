@@ -131,23 +131,23 @@ export default {
         {
           activities: [
             {
-              name: "Relaxing Tunes + Coloring",
-              startHour: 10.6,
+              name: "Design + Coloring + Relaxing Tunes",
+              startHour: 10.1,
               endHour: 17.5,
             },
           ],
         },
         {
           activities: [
-            {
-              name: "Just Dance",
-              startHour: 13.6,
-              endHour: 15.05,
+          {
+              name: "Design + Coloring + Relaxing Tunes",
+              startHour: 10.1,
+              endHour: 15.01,
             },
             {
-              name: "Devpost Workshop",
+              name: "Just Dance + Devpost Workshop",
               startHour: 15.05,
-              endHour: 16.05,
+              endHour: 17.5,
             },
           ],
         },

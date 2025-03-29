@@ -96,7 +96,4 @@ const triggerFlip = (unit: string) => {
       </div>
     </vue-countdown>
   </div>
-  <a href="/flyer.pdf" target="_blank" class="text-white rounded-lg hover:bg-blue-500 text-2xl">
-        Download Schedule
-      </a>
 </template>

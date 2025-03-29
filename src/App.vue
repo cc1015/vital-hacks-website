@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, defineAsyncComponent } from 'vue';
+import { ref, defineAsyncComponent } from "vue";
 
 const isMenuOpen = ref(false);
 const toggleMenu = () => {
@@ -7,21 +7,32 @@ const toggleMenu = () => {
 };
 
 // Lazy load components
-const TabBar = defineAsyncComponent(() => import('./components/TabBar.vue'));
-const Countdown = defineAsyncComponent(() => import('./components/Countdown.vue'));
-const About = defineAsyncComponent(() => import('./components/About.vue'));
-const Register = defineAsyncComponent(() => import('./components/Register.vue'));
-const Timeline = defineAsyncComponent(() => import('./components/Timeline.vue'));
-const FAQ = defineAsyncComponent(() => import('./components/FAQ.vue'));
-const Team = defineAsyncComponent(() => import('./components/Team.vue'));
-const RegistrationClosed = defineAsyncComponent(() => import('./components/RegistrationClosed.vue'));
+const TabBar = defineAsyncComponent(() => import("./components/TabBar.vue"));
+const Countdown = defineAsyncComponent(
+  () => import("./components/Countdown.vue")
+);
+const About = defineAsyncComponent(() => import("./components/About.vue"));
+const Register = defineAsyncComponent(
+  () => import("./components/Register.vue")
+);
+const Timeline = defineAsyncComponent(
+  () => import("./components/Timeline.vue")
+);
+const FAQ = defineAsyncComponent(() => import("./components/FAQ.vue"));
+const Team = defineAsyncComponent(() => import("./components/Team.vue"));
+const RegistrationClosed = defineAsyncComponent(
+  () => import("./components/RegistrationClosed.vue")
+);
 const Details = defineAsyncComponent(() => import("./components/Details.vue"));
 const Submit = defineAsyncComponent(() => import("./components/Submit.vue"));
-const EventTimeline = defineAsyncComponent(() => import("./components/EventTimeline.vue"));
-const DownloadTimeline = defineAsyncComponent(() => import("./components/DownloadTimeline.vue"));
+const EventTimeline = defineAsyncComponent(
+  () => import("./components/EventTimeline.vue")
+);
+const DownloadTimeline = defineAsyncComponent(
+  () => import("./components/DownloadTimeline.vue")
+);
 const Prompt = defineAsyncComponent(() => import("./components/Prompt.vue"));
 const Keynote = defineAsyncComponent(() => import("./components/Keynote.vue"));
-
 </script>
 
 <template>
@@ -105,9 +116,16 @@ const Keynote = defineAsyncComponent(() => import("./components/Keynote.vue"));
       </section>
       <section
         id="timeline"
-        class="scroll-mt-16 md:scroll-mt-32 pb-20 hidden md:block"
+        class="scroll-mt-16 md:scroll-mt-32 pb-20 hidden md:block text-center"
       >
         <EventTimeline />
+        <a
+          href="/flyer.pdf"
+          target="_blank"
+          class="text-white rounded-lg hover:bg-blue-500 text-xl"
+        >
+          Download Schedule
+        </a>
       </section>
       <section
         id="timelineDownload"
