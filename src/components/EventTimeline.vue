@@ -80,6 +80,7 @@ export default {
   data() {
     return {
       currentTime: new Date(),
+      timer: null,
       hours: [
         { value: 8, label: "8 AM" },
         { value: 9, label: "9 AM" },
@@ -139,7 +140,7 @@ export default {
         },
         {
           activities: [
-          {
+            {
               name: "Design + Coloring + Relaxing Tunes",
               startHour: 10.1,
               endHour: 15.01,
@@ -161,46 +162,54 @@ export default {
       const estOffset = -4 * 60; // EST is UTC-5 (in minutes)
       return new Date(now.getTime() + estOffset * 60 * 1000);
     },
+    currentTimeFormatted() {
+      return this.currentTime.toLocaleTimeString("en-US", {
+        hour: "numeric",
+        minute: "2-digit",
+        hour12: true,
+        timeZone: "America/New_York",
+      });
+    },
     getTickerPosition() {
-      const hours =
-        this.estTime.getUTCHours() + this.estTime.getUTCMinutes() / 60;
-
+      const now = this.currentTime;
+      const hours = now.getHours() + now.getMinutes() / 60;
+      
       // Only show ticker between 8 AM and 7 PM EST
       if (hours < 8 || hours > 19) {
         return { display: "none" };
       }
 
-      const totalHours = 19 - 8; // 7 PM - 8 AM
+      const totalHours = 19 - 8;
       const position = ((hours - 8) / totalHours) * 100;
 
       return {
         left: `${position}%`,
+        transition: "left 0.3s ease-out"
       };
-    },
-    currentTimeFormatted() {
-      const now = new Date();
-
-      return now.toLocaleTimeString("en-US", {
-        hour: "numeric",
-        minute: "2-digit",
-        hour12: true,
-        timeZone: "America/New_York", // Explicitly set the timezone to EST
-      });
     },
   },
   mounted() {
-    // Update time every minute
+    // Set initial time
+    this.updateCurrentTime();
+    
+    // Update more frequently - every second instead of every minute
     this.timer = setInterval(() => {
-      this.currentTime = new Date();
-    }, 60000);
+      this.updateCurrentTime();
+    }, 1000);  // Changed to 1000ms for smoother updates
   },
   beforeUnmount() {
-    // Clean up timer
+    // Clean up timer when component is destroyed
     if (this.timer) {
       clearInterval(this.timer);
     }
   },
   methods: {
+    updateCurrentTime() {
+      const now = new Date();
+      this.currentTime = new Date(
+        now.toLocaleString("en-US", { timeZone: "America/New_York" })
+      );
+    },
     getActivityStyle(activity) {
       const totalHours = 19 - 8;
       const startPercent = ((activity.startHour - 8) / totalHours) * 100;
@@ -306,6 +315,7 @@ export default {
   width: 2px;
   z-index: 2;
   pointer-events: none;
+  transition: left 0.3s ease-out;
 }
 
 .ticker-line {
