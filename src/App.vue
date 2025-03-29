@@ -1,24 +1,28 @@
 <script setup lang="ts">
-import TabBar from "./components/TabBar.vue";
-import Countdown from "./components/Countdown.vue";
-import About from "./components/About.vue";
-import Register from "./components/Register.vue";
-import Timeline from "./components/Timeline.vue";
-import Details from "./components/Details.vue";
-import FAQ from "./components/FAQ.vue";
-import Team from "./components/Team.vue";
-import RegistrationClosed from "./components/RegistrationClosed.vue";
-import Submit from "./components/Submit.vue";
-import EventTimeline from "./components/EventTimeline.vue";
-import DownloadTimeline from "./components/DownloadTimeline.vue";
-import Prompt from "./components/Prompt.vue";
-import Keynote from "./components/Keynote.vue";
-import { ref } from "vue";
+import { ref, defineAsyncComponent } from 'vue';
 
 const isMenuOpen = ref(false);
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
 };
+
+// Lazy load components
+const TabBar = defineAsyncComponent(() => import('./components/TabBar.vue'));
+const Countdown = defineAsyncComponent(() => import('./components/Countdown.vue'));
+const About = defineAsyncComponent(() => import('./components/About.vue'));
+const Register = defineAsyncComponent(() => import('./components/Register.vue'));
+const Timeline = defineAsyncComponent(() => import('./components/Timeline.vue'));
+const FAQ = defineAsyncComponent(() => import('./components/FAQ.vue'));
+const Team = defineAsyncComponent(() => import('./components/Team.vue'));
+const RegistrationClosed = defineAsyncComponent(() => import('./components/RegistrationClosed.vue'));
+const Details = defineAsyncComponent(() => import("./components/Details.vue"));
+const Submit = defineAsyncComponent(() => import("./components/Submit.vue"));
+const EventTimeline = defineAsyncComponent(() => import("./components/EventTimeline.vue"));
+const DownloadTimeline = defineAsyncComponent(() => import("./components/DownloadTimeline.vue"));
+const Prompt = defineAsyncComponent(() => import("./components/Prompt.vue"));
+const Keynote = defineAsyncComponent(() => import("./components/Keynote.vue"));
+import { ref } from "vue";
+
 </script>
 
 <template>
