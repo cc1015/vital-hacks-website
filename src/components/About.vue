@@ -1,6 +1,13 @@
 <template>
   <div class="flex gap-4 mb-4">
-    <div class="w-1/2"><h1 class="text-6xl md:text-8xl">All About ViTAL Hacks</h1></div>
+    <div class="w-1/2"><h1 class="text-6xl md:text-8xl">All About ViTAL Hacks</h1>
+    <a href="https://vital-hacks.devpost.com/" target="_blank" 
+           class="border-2 text-white rounded-lg hover:bg-blue-500 inline-block mt-8">
+            <button class="text-3xl px-6 py-4">
+                Devpost
+            </button>
+        </a>
+      </div>
     <div class="w-1/2">
       <h2 class="text-lg md:text-3xl">
         ViTAL Hacks 2025 is a beginner friendly healthcare hackathon hosted by
