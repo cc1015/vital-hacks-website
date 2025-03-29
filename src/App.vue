@@ -21,7 +21,6 @@ const EventTimeline = defineAsyncComponent(() => import("./components/EventTimel
 const DownloadTimeline = defineAsyncComponent(() => import("./components/DownloadTimeline.vue"));
 const Prompt = defineAsyncComponent(() => import("./components/Prompt.vue"));
 const Keynote = defineAsyncComponent(() => import("./components/Keynote.vue"));
-import { ref } from "vue";
 
 </script>
 
