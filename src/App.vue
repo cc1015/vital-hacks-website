@@ -130,11 +130,8 @@ const Keynote = defineAsyncComponent(() => import("./components/Keynote.vue"));
       <section class="flex flex-col items-center justify-center space-y-8">
         <img src="/main_logo.svg" alt="Main Logo" class="w-2/3 max-w-xl" />
       </section>
-      <section
-        id="timelineDownload"
-        class="scroll-mt-16 md:scroll-mt-32 pb-20 md:hidden"
-      >
-        <DownloadTimeline />
+      <section id="speaker" class="scroll-mt-32">
+        <Keynote />
       </section>
       <section id="about" class="scroll-mt-32 pb-20">
         <div class="relative mt-12">
