@@ -9,7 +9,7 @@
       class="flex flex-col md:flex-row items-start gap-8 p-8 bg-gray-900 rounded-xl shadow-lg"
     >
       <img
-        src="/jared_auclair.png"
+        src=""
         alt="Keynote speaker"
         class="w-full md:w-64 lg:w-80 h-auto object-cover border-4 border-gray-700 rounded-xl"
       />
