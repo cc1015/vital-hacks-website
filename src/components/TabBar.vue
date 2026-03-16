@@ -16,6 +16,7 @@ import TabItem from "./TabItem.vue";
       <TabItem id="register">Register</TabItem>
       <TabItem id="faq">FAQ</TabItem>
       <TabItem id="team">Team</TabItem>
+      <TabItem id="board">Board</TabItem>
     </div>
   </div>
 </template>

@@ -39,6 +39,9 @@ const DownloadTimeline = defineAsyncComponent(
 );
 const Prompt = defineAsyncComponent(() => import("./components/Prompt.vue"));
 const Keynote = defineAsyncComponent(() => import("./components/Keynote.vue"));
+const MessageBoard = defineAsyncComponent(
+  () => import("./components/MessageBoard.vue")
+);
 </script>
 
 <template>
@@ -110,6 +113,9 @@ const Keynote = defineAsyncComponent(() => import("./components/Keynote.vue"));
         <a href="#team" class="block px-4 py-2 text-white hover:bg-gray-800"
           >Team</a
         >
+        <a href="#board" class="block px-4 py-2 text-white hover:bg-gray-800"
+          >Board</a
+        >
       </div>
     </nav>
   </header>
@@ -168,6 +174,9 @@ const Keynote = defineAsyncComponent(() => import("./components/Keynote.vue"));
       </section>
       <section id="team" class="scroll-mt-32">
         <Team />
+      </section>
+      <section id="board" class="scroll-mt-32 pb-20">
+        <MessageBoard />
       </section>
     </div>
   </main>
