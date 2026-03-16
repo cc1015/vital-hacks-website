@@ -23,7 +23,7 @@
       <br></br>
       <br></br>
       <h2 class="text-lg md:text-3xl">
-        In addition to the 8-hour event, ViTAL Hacks will host two web
+        In addition to the 8-hour event, ViTAL Hacks will host three web
         development workshops and an Ideation Day to jumpstart technical skills
         and brainstorming.
       </h2>
