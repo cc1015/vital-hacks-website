@@ -2,7 +2,7 @@
   <div class="mb-8 flex flex-col items-center">
     <!-- Submit Button -->
     <a
-      href="https://vital-hacks.devpost.com/"
+      href="https://vital-hacks-2026.devpost.com/?_gl=1*dfxco8*_gcl_au*MTMzODAyMDQ2LjE3NzM2ODg2Nzk.*_ga*OTEyMjkxMjEuMTc3MzY4ODY4MA..*_ga_0YHJK3Y10M*czE3NzM2ODg2NzkkbzEkZzEkdDE3NzM2ODg4MjUkajQzJGwwJGgw"
       target="_blank"
       class="w-full max-w-xs border-2 text-white rounded-lg hover:bg-blue-500 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-300"
     >

@@ -3,117 +3,125 @@
     <div class="flex content-center text-center justify-center">
       <h1 class="challenge-header">THE CHALLENGE</h1>
       <a href="/prompt.pdf" target="_blank">
-        <img src="/download_icon.svg" alt="Info" class="w-8 h-8 cursor-pointer" />
       </a>
     </div>
-    <h1 class="text-center text-[#615fff]">PREVENTATIVE CARE</h1>
+    <h1 class="text-center text-[#615fff]">HEALTHCARE LITERACY</h1>
 
     <div class="prompt-box">
       <p>
-        Preventative care focuses on addressing potential health issues before
-        they develop into serious conditions, emphasizing
+        Healthcare literacy is a critical determinant of health outcomes, 
+        enabling individuals to
         <a
           class="text-[#2c3e50] font-bold underline underline-offset-4 decoration-4 decoration-indigo-500"
-          >early intervention</a
+          >understand</a
         >,
         <a
           class="text-[#2c3e50] font-bold underline underline-offset-4 decoration-4 decoration-blue-500"
-          >education</a
+          >access</a
         >, and
         <a
           class="text-[#2c3e50] font-bold underline underline-offset-4 decoration-4 decoration-gray-500"
-          >monitoring</a
+          >act</a
         >
-        to improve overall well-being. Its importance cannot be overstated; by
-        identifying risks and promoting healthy behaviors, preventative care
-        reduces the burden of chronic diseases, lowers healthcare costs, and
-        enhances the quality of life for individuals and communities.
+        on information related to their care. Despite its importance, many people face barriers due to complex medical 
+        language, inaccessible resources, high costs, or limited access to local healthcare services.
       </p>
+    </div>
+
+    <div class="flex justify-center">
+    <a
+    href="/schedule.pdf"
+    target="_blank"
+    class="text-white rounded-lg hover:bg-blue-500 text-xl">
+    Download Prompt
+    </a>
     </div>
 
     <div class="rectangles-container">
       <div class="rectangle">
         <!-- Icon Placeholder -->
         <img
-          src="/education_icon.svg"
-          alt="Education Icon"
+          src="/cost_icon.svg"
+          alt="Cost Icon"
           class="inline-block w-36 h-36"
         />
-        <h3>Preventative Care Education</h3>
+        <h3>Healthcare Cost Literacy</h3>
         <p>
-          Preventative care plays a crucial role in maintaining overall health
-          and well-being. One significant challenge in this space is the lack of
-          knowledge and education about preventative care and the healthcare
-          system. Individuals might be unaware of the benefits of preventative
-          care and what their healthcare plan may or may not cover. Those
-          without a healthcare plan may incorrectly assume they do not have
-          access to preventative care services. For these reasons and many more,
-          preventative care education at the individual and systemic level can
-          provide a foundation for healthier and longer lives. Your challenge is
-          to build a product that supports education of preventative care
-          options and how they can help individuals.
+          Healthcare costs are often confusing, unpredictable, and poorly 
+          communicated to patients. One significant challenge in this space 
+          is the lack of clear, upfront information about the price of services, 
+          procedures, and medications. Individuals might avoid necessary care out 
+          of fear of unexpected bills or financial hardship. Even insured patients
+          may not know what portion of costs they are responsible for until after 
+          care is received. Due to these pressing issues, increasing transparency 
+          around healthcare costs can empower individuals to make informed decisions, 
+          reduce financial stress, and improve trust in the healthcare system. 
+          Your challenge is to build a product that improves the clarity, 
+          accessibility, and understanding of healthcare costs for patients.
         </p>
       </div>
 
       <div class="rectangle">
         <!-- Icon Placeholder -->
         <img
-          src="/access_icon.svg"
-          alt="Access Icon"
+          src="/disability_icon.svg"
+          alt="Disability Icon"
           class="inline-block w-36 h-36"
         />
-        <h3>Access to Care</h3>
+        <h3>Disability Health Literacy</h3>
         <p>
-          Physical barriers pose a tough challenge for preventative care. Long
-          distances, in-person time constraints, and transportation limitations
-          are just a few examples of such physical barriers. Individuals may be
-          unaware of preventative care services in their immediate area, what
-          public transportation is available for these services, or just might
-          not have enough time to attend in-person appointments. Socioeconomic
-          factors, physical disabilities, or caregiving responsibilities can
-          further compound these challenges, leaving many without timely
-          preventative care. Your challenge is to build a product that can
-          bridge this physical gap and increase the access to preventative care.
+          People with disabilities often face significant barriers in 
+          accessing health information that is accurate, accessible, and 
+          relevant to their needs. These barriers include digital 
+          inaccessibility, communication gaps, and design exclusion. Additionally, 
+          healthcare providers may lack training or tools to effectively 
+          communicate complex health information to patients with cognitive, 
+          sensory, or communication disabilities, leading to lower health outcomes, medication errors, and 
+          preventable complications. Your challenge is to build a product that supports 
+          accessible, inclusive, and effective healthcare education for people 
+          with disabilities. You may choose to focus on a specific target 
+          audience (such as patients with disabilities, family caregivers, 
+          or healthcare providers) or design a solution that serves multiple stakeholders.
         </p>
       </div>
 
       <div class="rectangle">
         <!-- Icon Placeholder -->
         <img
-          src="/digital_icon.svg"
-          alt="Digital Icon"
+          src="/rural_icon.svg"
+          alt="Rural Icon"
           class="inline-block w-36 h-36"
         />
-        <h3>Digital Health Monitoring</h3>
+        <h3>Rural Health Literacy</h3>
         <p>
-          Digital health monitoring is transforming the way we understand and
-          manage personal health, leveraging technology to track key metrics and
-          provide real-time insights. From wearable devices that measure heart
-          rates and sleep patterns to apps that monitor diet, stress, or
-          physical activity, these tools empower individuals to make informed
-          decisions about their well-being. By turning data into actionable
-          insights, digital health monitoring helps identify early signs of
-          health concerns, promote healthier habits, and bridge the gap between
-          patients and preventative care. Your challenge is to design a digital
-          health monitoring solution that is innovative, user-friendly, and
-          impactful.
+          Many health resources 
+          and education materials are designed for urban centers, where population 
+          is denser. These resources and educational materials fail to address specific 
+          realities experienced by rural communities, such as agricultural risks, 
+          long travel times to hospitals, and lack of specialty care. In this way, 
+          geographic isolation and connectivity barriers may prevent rural residents 
+          from obtaining timely, accurate, and culturally relevant information about 
+          their health. Increasing health literacy in rural communities can empower 
+          individuals to take charge of their health and bridge gaps in care. 
+          Your challenge is to build a product that strengthens access to healthcare 
+          education and resources for rural populations.
         </p>
       </div>
 
       <div class="rectangle">
         <!-- Icon Placeholder -->
-        <img src="/ai_icon.svg" alt="AI Icon" class="inline-block w-36 h-36" />
-        <h3>Artificial Intelligence</h3>
+        <img src="/data_icon.svg" alt="Data Icon" class="inline-block w-36 h-36" />
+        <h3>Health Data Literacy</h3>
         <p>
-          Preventative care is the key to a healthier future, focusing on
-          identifying risks and intervening before health issues arise. By
-          promoting early detection and encouraging healthier lifestyles, it
-          reduces the burden of chronic diseases and improves overall
-          well-being. AI is revolutionizing this field by analyzing data to
-          predict health risks, providing personalized recommendations, and
-          enabling smarter, more proactive healthcare. Your challenge is to
-          create an AI-driven software solution that enhances preventative care
-          for individuals.
+          Health data is increasingly generated from electronic health records, 
+          wearable devices, and patient-reported outcomes, yet individuals 
+          often struggle to understand or access their own information. 
+          One significant challenge in this space is the lack of clear communication 
+          about how health data is used, shared, and interpreted. Patients may feel 
+          excluded from decision-making about their care due to unfamiliarity with 
+          medical terms, privacy concerns, or limited ability to analyze data themselves. 
+          Your challenge is to build a product that helps individuals better access, 
+          understand, and engage with their personal health data.
         </p>
       </div>
     </div>
@@ -181,6 +189,8 @@
 .rectangle p {
   color: #ffffff;
   margin: 0;
+  font-size: 1.1rem;  
+  line-height: 1.7;    
 }
 
 @media (max-width: 768px) {

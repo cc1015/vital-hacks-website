@@ -1,5 +1,4 @@
 <template>
-  <div class="px-16">
     <div class="timeline-wrapper">
       <!-- Header Timeline -->
       <div class="timeline-header">
@@ -28,15 +27,11 @@
 
         <!-- Add special dividers -->
         <div class="special-dividers">
-          <div class="special-divider" :style="getHourDividerStyle(9.5)">
+          <div class="special-divider" :style="getHourDividerStyle(9)">
             <div class="special-divider-line"></div>
             <div class="special-divider-label">HACKING BEGINS</div>
           </div>
-          <div class="special-divider" :style="getHourDividerStyle(13.5)">
-            <div class="special-divider-line"></div>
-            <div class="special-divider-label">LUNCH</div>
-          </div>
-          <div class="special-divider" :style="getHourDividerStyle(17.5)">
+          <div class="special-divider" :style="getHourDividerStyle(17)">
             <div class="special-divider-line"></div>
             <div class="special-divider-label">HACKING ENDS</div>
           </div>
@@ -56,12 +51,11 @@
 
         <div class="stages-container">
           <div v-for="(stage, index) in stages" :key="index" class="stage">
-            <div class="stage-label">{{ stageLabels[index] }}</div>
             <div class="activities">
               <div
                 v-for="activity in stage.activities"
                 :key="activity.name"
-                class="activity text-xs md:text-base"
+                class="activity text-10px md:text-base"
                 :style="getActivityStyle(activity)"
               >
                 {{ activity.name }}
@@ -71,7 +65,6 @@
         </div>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -99,23 +92,28 @@ export default {
         {
           activities: [
             {
-              name: "Check-in Breakfast",
-              startHour: 8.25,
-              endHour: 9.15,
+              name: "Check-in",
+              startHour: 8.15,
+              endHour: 8.7,
             },
             {
               name: "Intro",
-              startHour: 9.15,
-              endHour: 9.63,
+              startHour: 8.7,
+              endHour: 9,
             },
             {
               name: "Hacking",
-              startHour: 9.65,
-              endHour: 17.5,
+              startHour: 9,
+              endHour: 17,
+            },
+            {
+              name: "Project Presentations",
+              startHour: 17,
+              endHour: 18,
             },
             {
               name: "Keynote Speaker + Closing",
-              startHour: 17.55,
+              startHour: 18,
               endHour: 19,
             },
           ],
@@ -123,37 +121,33 @@ export default {
         {
           activities: [
             {
-              name: "Hacking",
-              startHour: 9.65,
-              endHour: 17.5,
-            },
-          ],
-        },
-        {
-          activities: [
-            {
-              name: "Design + Coloring + Relaxing Tunes",
-              startHour: 10.1,
-              endHour: 17.5,
-            },
-          ],
-        },
-        {
-          activities: [
-            {
-              name: "Design + Coloring + Relaxing Tunes",
-              startHour: 10.1,
-              endHour: 15.01,
+              name: "Breakfast",
+              startHour: 8.15,
+              endHour: 8.7,
             },
             {
-              name: "Just Dance + Devpost Workshop",
-              startHour: 15.05,
-              endHour: 17.5,
+              name: "Break",
+              startHour: 10,
+              endHour: 10.5,
+            },
+            {
+              name: "Snacks",
+              startHour: 11.5,
+              endHour: 12,
+            },
+            {
+              name: "Lunch",
+              startHour: 13.5,
+              endHour: 14.5,
+            },
+            {
+              name: "Energy Drinks!",
+              startHour: 15.5,
+              endHour: 16,
             },
           ],
         },
       ],
-      stageLabels: ["EV024", "EV002", "EV008", "EV010"],
     };
   },
   computed: {
@@ -192,7 +186,7 @@ export default {
     // Set initial time
     this.updateCurrentTime();
     
-    // Update more frequently - every second instead of every minute
+    // Update every second
     this.timer = setInterval(() => {
       this.updateCurrentTime();
     }, 1000);  // Changed to 1000ms for smoother updates
@@ -225,8 +219,10 @@ export default {
         height: "70px",
         display: "flex",
         alignItems: "center",
-        padding: "8px",
+        justifyContent: "center",
+        padding: "2px",
         borderRadius: "4px",
+        border: "1px solid white",
       };
     },
     getHourDividerStyle(hour) {
@@ -259,8 +255,8 @@ export default {
 
 <style scoped>
 .timeline-wrapper {
-  margin-left: 80px;
-  margin-right: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .timeline-header {

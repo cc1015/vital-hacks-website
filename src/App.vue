@@ -120,6 +120,27 @@ const Keynote = defineAsyncComponent(() => import("./components/Keynote.vue"));
     <div class="flex flex-col space-y-16">
       <section class="flex flex-col items-center justify-center space-y-8">
         <img src="/main_logo.svg" alt="Main Logo" class="w-2/3 max-w-xl" />
+        <h3>Hacking Ends In...</h3>
+        <Countdown />
+      </section>
+      <section
+        id="timeline"
+        class="scroll-mt-16 md:scroll-mt-32 pb-20 hidden md:block text-center w-screen relative left-1/2 -translate-x-1/2"
+      >
+        <EventTimeline />
+        <a
+          href="/schedule.pdf"
+          target="_blank"
+          class="text-white rounded-lg hover:bg-blue-500 text-xl"
+        >
+          Download Schedule
+        </a>
+      </section>
+      <section id="prompt" class="scroll-mt-32">
+        <Prompt />
+      </section>
+      <section id="submit" class="scroll-mt-32">
+        <Submit />
       </section>
       <section id="about" class="scroll-mt-32 pb-20">
         <div class="relative mt-12">
