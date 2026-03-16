@@ -5,7 +5,7 @@
       </div>
     <div class="w-1/2">
       <h2 class="text-lg md:text-3xl">
-        ViTAL Hacks 2025 is a beginner friendly healthcare hackathon hosted by
+        ViTAL Hacks is a beginner friendly healthcare hackathon hosted by
         <a
           href="https://vitalnortheastern.org/"
           target="_blank"

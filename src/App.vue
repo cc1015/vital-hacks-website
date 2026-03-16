@@ -42,15 +42,6 @@ const Keynote = defineAsyncComponent(() => import("./components/Keynote.vue"));
 </script>
 
 <template>
-  <!-- Nav Toggle Button -->
-  <button
-    @click="toggleNavVisibility"
-    class="fixed right-4 z-50 bg-white/20 text-white px-3 py-1 rounded-lg backdrop-blur-sm hover:bg-white/30 transition"
-    :class="isNavVisible ? 'top-24' : 'top-4'"
-  >
-    {{ isNavVisible ? "Hide ^" : "Show" }}
-  </button>
-
   <header>
     <!-- Desktop Navigation -->
     <nav class="hidden lg:block" v-show="isNavVisible">
@@ -130,9 +121,6 @@ const Keynote = defineAsyncComponent(() => import("./components/Keynote.vue"));
       <section class="flex flex-col items-center justify-center space-y-8">
         <img src="/main_logo.svg" alt="Main Logo" class="w-2/3 max-w-xl" />
       </section>
-      <section id="speaker" class="scroll-mt-32">
-        <Keynote />
-      </section>
       <section id="about" class="scroll-mt-32 pb-20">
         <div class="relative mt-12">
           <img
@@ -165,7 +153,7 @@ const Keynote = defineAsyncComponent(() => import("./components/Keynote.vue"));
 
   <footer class="px-4">
     <hr class="border-t-3" />
-    <div class="mt-2 mb-8">&copy; Vital Hacks 2025</div>
+    <div class="mt-2 mb-8">&copy; Vital Hacks 2026</div>
   </footer>
 </template>
 

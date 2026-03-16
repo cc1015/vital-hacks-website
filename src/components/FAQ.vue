@@ -40,11 +40,6 @@ const faqs = ref<FAQItem[]>([
     isOpen: false,
   },
   {
-    question: "When is the registration deadline?",
-    answer: "3/22 @ 11:59PM EST or until capacity is reached.",
-    isOpen: false,
-  },
-  {
     question: "Should I participate or be a mentor?",
     answer:
       "All experience levels are welcome to participate, but if you are a beginner looking to break into health tech, we encourage you to participate in the hackathon. If you have a little bit more experience and feel comfortable serving as a technical guide to students throughout the event, we encourage you to be a mentor!",
