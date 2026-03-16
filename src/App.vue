@@ -153,7 +153,7 @@ const Keynote = defineAsyncComponent(() => import("./components/Keynote.vue"));
 
   <footer class="px-4">
     <hr class="border-t-3" />
-    <div class="mt-2 mb-8">&copy; Vital Hacks 2025</div>
+    <div class="mt-2 mb-8">&copy; Vital Hacks 2026</div>
   </footer>
 </template>
 
