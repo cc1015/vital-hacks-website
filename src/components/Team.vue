@@ -5,22 +5,14 @@ import TeamMember from "./TeamMember.vue";
 <template>
   <div class="text-center">
     <h3 class="mb-6">Team</h3>
-    <h6 class="text-lg font-semibold mb-6">ViTAL Co-Executive Directors</h6>
+    <h6 class="text-lg font-semibold mb-6">ViTAL Hacks Director</h6>
     <div class="flex justify-center gap-8 mb-2">
       <div class="flex flex-col items-center">
         <TeamMember
-          src="/adam.jpg"
-          alt="Adam"
-          caption="Adam Kwoh"
-          contact="https://www.linkedin.com/in/adam-kwoh/"
-        />
-      </div>
-      <div class="flex flex-col items-center">
-        <TeamMember
-          src="/virali.jpg"
-          alt="Virali"
-          caption="Virali Patel"
-          contact="https://www.linkedin.com/in/viralipatel1025/"
+          src="/members/aria.jpg"
+          alt="Aria"
+          caption="Aria Agarwal"
+          contact="https://www.linkedin.com/in/aria-agarwal-4a11b629a/"
         />
       </div>
     </div>
@@ -31,7 +23,7 @@ import TeamMember from "./TeamMember.vue";
         <div class="flex justify-center gap-8">
           <div class="flex flex-col items-center">
             <TeamMember
-              src="/jakob.jpg"
+              src="/members/jakob.jpg"
               alt="Jakob"
               caption="Jakob Clark"
               contact="https://www.linkedin.com/in/jakob-clark-/"
@@ -39,7 +31,7 @@ import TeamMember from "./TeamMember.vue";
           </div>
           <div class="flex flex-col items-center">
             <TeamMember
-              src="/thillai.jpg"
+              src="/members/thillai.jpg"
               alt="Thillai"
               caption="Thillai Sudhakar"
               contact="https://www.linkedin.com/in/thillai-sudhakar/"
@@ -53,17 +45,17 @@ import TeamMember from "./TeamMember.vue";
         <div class="flex justify-center gap-8">
           <div class="flex flex-col items-center">
             <TeamMember
-              src="/aria.jpg"
+              src="/members/oscar.jpg"
               alt="Aria"
-              caption="Aria Agarwal"
-              contact="https://www.linkedin.com/in/aria-agarwal-4a11b629a/"
+              caption="Oscar Ji"
+              contact="https://www.linkedin.com/in/oscar-ji/"
             />
           </div>
           <div class="flex flex-col items-center">
             <TeamMember
-              src="/jaena.jpg"
+              src="/members/jaena.jpg"
               alt="JaeNa"
-              caption="Jae Na Wray"
+              caption="Jaena Wray"
               contact="https://www.linkedin.com/in/jaenawray/"
             />
           </div>
@@ -74,7 +66,7 @@ import TeamMember from "./TeamMember.vue";
     <div class="flex justify-center gap-8 mb-2">
       <div class="flex flex-col items-center">
         <TeamMember
-          src="/curie.png"
+          src="/members/curie.JPG"
           alt="Curie"
           caption="Curie Cha"
           contact="https://www.linkedin.com/in/curiecha"
@@ -82,7 +74,7 @@ import TeamMember from "./TeamMember.vue";
       </div>
       <div class="flex flex-col items-center">
         <TeamMember
-          src="/vaishnavi.png"
+          src="/members/vaishnavi.png"
           alt="Vaishnavi"
           caption="Vaishnavi Chebrolu"
           contact="https://www.linkedin.com/in/vaishnavi-chebrolu-79b8321b6/"

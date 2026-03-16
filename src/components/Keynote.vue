@@ -9,34 +9,22 @@
       class="flex flex-col md:flex-row items-start gap-8 p-8 bg-gray-900 rounded-xl shadow-lg"
     >
       <img
-        src="/jared_auclair.png"
+        src="/kylie_bemis.jpeg"
         alt="Keynote speaker"
         class="w-full md:w-64 lg:w-80 h-auto object-cover border-4 border-gray-700 rounded-xl"
       />
 
       <div class="flex-1">
-        <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">
-          Jared R. Auclair, PhD
+        <h3 class="text-2xl md:text-3xl font-bold text-white">
+          Kylie Ariel Bemis, Ph.D.
+        </h3>
+        <h3 class="text-2xl md:text-xl font-bold text-white mb-4">
+        Assistant Teaching Professor, Khoury College of Computer Sciences, Northeastern University
         </h3>
         <p class="text-gray-300 leading-relaxed text-md md:text-lg">
-          Dr. Jared R. Auclair is currently the Vice Provost for Research
-          Economic Development and Director of Bioinnovation in the Office of
-          the Provost at Northeastern University. As Vice Provost for Research
-          Economic Development, Dr. Auclair works to strengthen the bonds
-          between the university's education and research missions by
-          integrating work-integrated credentialed learning and use-inspired
-          research. He collaborates with communities and partners while
-          expanding Northeastern's global mindset.
-        </p>
-        <p class="text-gray-300 leading-relaxed mt-4 text-md md:text-lg">
-          As Director of Bioinnovation, Dr. Auclair leverages Northeastern's
-          biotechnology initiatives, bringing together experts from diverse
-          disciplines to advance the university's life sciences programs. In
-          addition to these roles, Dr. Auclair holds a faculty appointment in
-          the Department of Chemistry and Chemical Biology, where he
-          collaborates with academic researchers, industry leaders, and
-          government agencies in the field of biopharmaceutical development and
-          analysis.
+          Kylie Ariel Bemis is a statistician and computer scientist whose work focuses on statistical computing methods for complex, multi-source datasets. She develops curriculum for Northeastern's Master's in Data Science program and teaches data science courses at Khoury College.
+She is the creator of Cardinal, a widely used software package for statistical analysis of mass spectrometry imaging experiments, developed during her time at the Canary Center for Cancer Early Detection at Stanford University. In 2015, she received the John M. Chambers Statistical Software Award from the American Statistical Association for this work.
+An enrolled member of the Zuni tribe, Professor Bemis is actively involved in outreach to the Native American and LGBTQ+ communities. Outside of academia, she enjoys writing fiction and poetry.
         </p>
       </div>
     </div>
