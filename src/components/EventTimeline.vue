@@ -31,7 +31,7 @@
             <div class="special-divider-line"></div>
             <div class="special-divider-label">HACKING BEGINS</div>
           </div>
-          <div class="special-divider" :style="getHourDividerStyle(17)">
+          <div class="special-divider" :style="getHourDividerStyle(17.5)">
             <div class="special-divider-line"></div>
             <div class="special-divider-label">HACKING ENDS</div>
           </div>
@@ -104,16 +104,11 @@ export default {
             {
               name: "Hacking",
               startHour: 9,
-              endHour: 17,
-            },
-            {
-              name: "Project Presentations",
-              startHour: 17,
-              endHour: 18,
+              endHour: 17.5,
             },
             {
               name: "Keynote Speaker + Closing",
-              startHour: 18,
+              startHour: 17.5,
               endHour: 19,
             },
           ],
@@ -122,11 +117,11 @@ export default {
           activities: [
             {
               name: "Breakfast",
-              startHour: 8.15,
-              endHour: 8.7,
+              startHour: 8.7,
+              endHour: 9.3,
             },
             {
-              name: "Break",
+              name: "Slime!",
               startHour: 10,
               endHour: 10.5,
             },
@@ -137,11 +132,11 @@ export default {
             },
             {
               name: "Lunch",
-              startHour: 13.5,
-              endHour: 14.5,
+              startHour: 12.5,
+              endHour: 13.5,
             },
             {
-              name: "Energy Drinks!",
+              name: "Energy Drinks",
               startHour: 15.5,
               endHour: 16,
             },

@@ -134,19 +134,15 @@ const MessageBoard = defineAsyncComponent(
         class="scroll-mt-16 md:scroll-mt-32 pb-20 hidden md:block text-center w-screen relative left-1/2 -translate-x-1/2"
       >
         <EventTimeline />
-        <a
-          href="/schedule.pdf"
-          target="_blank"
-          class="text-white rounded-lg hover:bg-blue-500 text-xl"
-        >
-          Download Schedule
-        </a>
       </section>
       <section id="prompt" class="scroll-mt-32">
         <Prompt />
       </section>
       <section id="submit" class="scroll-mt-32">
         <Submit />
+      </section>
+      <section id="board" class="scroll-mt-32 pb-20">
+        <MessageBoard />
       </section>
       <section id="about" class="scroll-mt-32 pb-20">
         <div class="relative mt-12">
@@ -174,9 +170,6 @@ const MessageBoard = defineAsyncComponent(
       </section>
       <section id="team" class="scroll-mt-32">
         <Team />
-      </section>
-      <section id="board" class="scroll-mt-32 pb-20">
-        <MessageBoard />
       </section>
     </div>
   </main>
