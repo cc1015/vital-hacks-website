@@ -29,7 +29,6 @@ const Team = defineAsyncComponent(() => import("./components/Team.vue"));
 const RegistrationClosed = defineAsyncComponent(
   () => import("./components/RegistrationClosed.vue")
 );
-const Details = defineAsyncComponent(() => import("./components/Details.vue"));
 const Submit = defineAsyncComponent(() => import("./components/Submit.vue"));
 const EventTimeline = defineAsyncComponent(
   () => import("./components/EventTimeline.vue")

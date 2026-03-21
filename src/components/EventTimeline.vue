@@ -121,7 +121,7 @@ export default {
               endHour: 9.3,
             },
             {
-              name: "Slime!",
+              name: "Break!",
               startHour: 10,
               endHour: 10.5,
             },
@@ -136,7 +136,7 @@ export default {
               endHour: 13.5,
             },
             {
-              name: "Energy Drinks",
+              name: "Snacks",
               startHour: 15.5,
               endHour: 16,
             },
