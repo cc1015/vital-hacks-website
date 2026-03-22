@@ -3,7 +3,7 @@
     <h2
       class="text-3xl md:text-4xl font-bold text-white uppercase tracking-wider mb-6 text-center"
     >
-      Keynote Speaker
+      2026 Keynote Speaker
     </h2>
     <div
       class="flex flex-col md:flex-row items-start gap-8 p-8 bg-gray-900 rounded-xl shadow-lg"
